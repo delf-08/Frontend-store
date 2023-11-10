@@ -100,20 +100,13 @@ h3 {
 .contenedor__producto { /* pantallas pequenias */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.contenedor__producto img{
-    width: 15rem;   
-}
 
 @media (min-width: 768px) {
     .contenedor__producto { /* pantallas grandes */
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .contenedor__producto img{
-        width: 100%;
     }
 }
 
@@ -125,7 +118,8 @@ h3 {
 }
 
 .producto:hover{
-    transform: scale(1.01);}
+    transform: scale(1.01);
+}
 
 .producto__nombre {
     font-size: 4rem;
